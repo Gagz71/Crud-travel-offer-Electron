@@ -1,0 +1,19 @@
+{
+  "name": "eval-dounia-manhouli",
+  "version": "1.0.0",
+  "description": "Evaluation Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dounia Manhouli",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3",
+    "bootswatch": "^5.1.2",
+    "electron": "^15.1.2",
+    "electron-store": "^8.0.1"
+  }
+}

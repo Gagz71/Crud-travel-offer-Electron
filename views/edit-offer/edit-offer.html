@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Ajout d'une nouvelle offre</title>
+        <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="edit-offer.css">
+</head>
+<body>
+
+<!-- Page Content -->
+<div class="container">
+
+        <!-- Header Content -->
+        <div class="row">
+                <div class="col">
+                        <h1 class="my-5 text-center">Modification d'une  offre </h1>
+                </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="row mb-5">
+
+                <div class="col-10 mx-auto card shadow text-center py-3">
+
+                        <div id="response-message" class="alert-success py-3" hidden></div>
+
+                        <form id="edit-item-form">
+
+                                <div class="form-group">
+                                        <label for="item-title">Titre de l'offre</label>
+                                        <input type="text" id="item-title" class="form-control" placeholder="Veuillez renseigner un titre pour cette nouvelle offre">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="item-destination">Destination</label>
+                                        <input type="text" class="form-control" id="item-destination" placeholder="Veuillez renseigner la destination de cette nouvelle offre">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="item-short-description">Courte description</label>
+                                        <textarea class="form-control" id="item-short-description" placeholder="Veuillez renseigner une courte description pour cette nouvelle offre"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="item-long-description">Description détaillé</label>
+                                        <textarea class="form-control" id="item-long-description" placeholder="Veuillez renseigner une description détaillé pour cette nouvelle offre"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="item-bonus">Les plus</label>
+                                        <input type="text" class="form-control" id="item-bonus" placeholder="Veuillez renseigner les plus de cette nouvelle offre">
+                                        <i  class="fas fa-plus cursor" id="item-bonus-btn">ajouter à la liste</i>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="item-price">Prix(€)</label>
+                                        <input type="number" class="form-control" id="item-price" placeholder="Veuillez renseigner un prix pour cette nouvelle offre">
+                                </div>
+                                <div class="form-group">
+                                        <label for="item-pictureUrl">Photo Principal</label>
+                                        <input type="text" class="form-control" id="item-pictureUrl" placeholder="Veuillez renseigner le lien de l'image principal de la nouvelle offre">
+                                </div>
+                                <div class="form-group">
+                                        <label for="item-carouselPicturesUrl">Photos pour le carousel </label>
+                                        <input type="text" class="form-control" id="item-carouselPicturesUrl" placeholder="Veuillez renseigner les liens des images de l'offre à présenter dans le carousel" >
+                                        <i class="fas fa-plus cursor" id="item-carousel-btn" >ajouter à la liste</i>
+
+                                </div>
+
+
+                                <div class="row">
+                                        <div class="col-6 mx-auto">
+                                                <button type="submit" id="edit-offer-submit" class="btn btn-dark btn-lg btn-block"  >AJOUTER</button>
+                                        </div>
+                                </div>
+
+                        </form>
+
+                </div>
+
+        </div>
+
+</div>
+
+
+<script>
+        window.controllers.loadController('edit-offer');
+</script>
+</body>
+</html>

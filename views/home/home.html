@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="UTF-8">
+        <title>Capt'N Cook Journey Manager</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+</head>
+<body>
+        <!--Navbar-->
+        <header>
+                <div class="collapse bg-dark-night" id="navbarHeader">
+                        <div class="container">
+                                <div class="row">
+                                        <div class="col-sm-8 col-md-7 py-4">
+                                                <h4 class="text-white">Capt'N Cook Journey Manager</h4>
+                                                <p class="text-muted">Votre gestionnaire d'offres de voyages !</p>
+                                        </div>
+                                        <div class="col-sm-4 offset-md-1 py-4">
+                                                <h4 class="text-white">Contact</h4>
+                                                <ul class="list-unstyled">
+                                                        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                                                        <li><a href="#" class="text-white">Like on Facebook</a></li>
+                                                        <li><a href="#" class="text-white">Email me</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="navbar navbar-dark bg-dark-night shadow-sm">
+                        <div class="container d-flex justify-content-between">
+                                <a href="#" class="navbar-brand d-flex align-items-center">
+                                        <strong>🦜Capt'N Cook☠</strong>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                </button>
+                        </div>
+                </div>
+        </header>
+
+        <main role="main" class=" bg-compass">
+                <section class="jumbotron text-center"  >
+                        <div class="container mt-5 mb-5">
+                                <h1> 🗺️ Bienvenue sur votre journey manager 🗺️</h1>
+                                <p class="lead text-muted">Capt'N Cook  vous permet de gérer facilement et rapidement toutes vos offres de voyages !</p>
+                                <p>
+                                        <i id="add-offer" class="fa-2x fas  add-icon" title="ajouter une nouvelle offre">🧭</i>
+                                </p>
+                        </div>
+                </section>
+
+                <div class="container-fluid">
+                        <div class="row row-cols-1 row-cols-md-3" id="div-card">
+                                <!--Cards Offers Section-->
+                        </div>
+                </div>
+        </main>
+
+        <footer class="text-muted">
+                <div class="container">
+                        <p class="float-right">
+                                <a href="#navbarHeader">Revenir en haut</a>
+                        </p>
+                        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+                        <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.5/getting-started/introduction/">getting started guide</a>.</p>
+                </div>
+        </footer>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+                //Loading homeController
+                window.controllers.loadController('home');
+        </script>
+</body>
+</html>

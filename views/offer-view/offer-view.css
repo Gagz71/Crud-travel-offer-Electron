@@ -1,0 +1,8 @@
+.bg-compass{
+    background-image: url(https://www.pillingerworldtravel.co.uk/wp-content/themes/pillinger-travel/library/images/compass2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn:hover{
+    color: #fff;
+}
